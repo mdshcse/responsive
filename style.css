@@ -342,4 +342,12 @@ text-align: center;
     .pricing-grid {
         grid-template-columns: repeat(1,1fr);
     }
+      .skills {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 0 5%;
+        width: 100%;
+        margin-bottom: 50px;    }
   }
