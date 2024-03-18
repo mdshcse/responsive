@@ -269,7 +269,7 @@ text-align: center;
 }
 
 .price {
-    height: 350px;
+    height: 370px;
 }
 
 .price span {
@@ -284,18 +284,18 @@ text-align: center;
     padding: 5px 20px;
 }
 .price button:hover {
-    color:green;
+    color:#04f6f8;
     cursor: pointer;
 }
 
 .price1 h4{
-    background-color: #f44336;
+    background-color: #04f6f8;
     line-height: 40px;
 
 }
 
 .price1 {
-    height: 380px;
+    height: 400px;
 }
 
 .form {
