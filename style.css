@@ -1,7 +1,13 @@
+* {
+    box-sizing:border-box;
+}
+
 body {
     margin: 0px;
 }
 .navigation {
+    position:fixed;
+    width:100%;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 4px 8px 0px rgba(109, 109, 109, 0.6);
@@ -292,7 +298,70 @@ text-align: center;
     height: 380px;
 }
 
-@media screen and (min-width: 600px) and (max-width:1000px) {
+.form {
+    width:90%;
+    margin:0 auto;
+}
+
+input {
+    display:block;
+    width:95%;
+    height:40px;
+    margin:20px auto;
+
+    padding:0px;
+    border:none;
+}
+form button {
+    background-color:black;
+    padding:10px;
+    font-size:16px;
+    margin:0 2.5%;
+}
+
+form button:hover {
+    color: Black;
+    background-color: gray;
+}
+.map img {
+    width:100%;
+    filter:grayscale();
+    margin:50px 0;
+}
+
+.footer {
+    background-color:#04f6f8;
+    width: 100%;
+    height:300px;
+    text-align:center;
+    padding:50px;
+}
+
+.footer button {
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.footer i {
+    color:black;
+    font-size:18px;
+}
+.contact {
+    text-align:center;
+}
+
+.title {
+    font-size:24px;
+    text-align:center;
+}
+.subtitle {
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+
+
+@media screen and (min-width: 700px) and (max-width:1000px) {
     .features {
         display:grid;
         grid-template-columns: repeat(2,1fr);
@@ -313,21 +382,33 @@ text-align: center;
     }
   }
 
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:700px) {
+    * {
+        padding:0%;
+    }
     .features {
         display:grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .member {
+        padding:10px 0px;
     }
     .skill {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         justify-content: center;
-        padding: 0 5%;
         width: 100%;
     }
     .team {
         grid-template-columns: repeat(1,1fr);
+        width:100%;
+        margin:50px 0px;
+        
+    }
+    .member {
+        box-shadow: none;
+        width: 100%;
     }
     .work-images {
         grid-template-columns: repeat(1,1fr);
@@ -342,12 +423,19 @@ text-align: center;
     .pricing-grid {
         grid-template-columns: repeat(1,1fr);
     }
-      .skills {
+    .skills {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         justify-content: center;
-        padding: 0 5%;
         width: 100%;
-        margin-bottom: 50px;    }
+        margin-bottom: 50px;    
+    }
+    .work-images {
+        width:100%;
+        margin: 50px 0px;
+    }
+    .works {
+        width:100%;
+    }
   }
