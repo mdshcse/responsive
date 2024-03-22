@@ -119,6 +119,7 @@ h3 {
     padding: 10px;
     color:black;
     border: none;
+    transition:.3s;
     
 }
 .skill button i{
@@ -127,7 +128,7 @@ h3 {
 
 .skill button:hover {
     background-color: rgba(12, 12, 12,.8);
-    color:white;
+    color:var(--colortext);
     cursor: pointer;
 }
 
